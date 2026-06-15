@@ -8,8 +8,9 @@
         :root {
             --azul: #3c8be6;
             --laranja: #e67e22;
-            --amarelo: #ebee26;
+            --cinza: #dfdfdf;
             --verde: #35cf68;
+            --amarelo: #fdff74;
             --roxo: #9b59b6;
             --cinza-escuro: #21273b;
             --fundo-claro: #f2faff;
@@ -32,8 +33,11 @@
             background-color: var(--azul);
             color: var(--texto-branco);
             padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
+            margin: 0px;
+            border-radius: 4px
+            width: 100vw
+            height: 30vh;
+            box-sizing: border-box;
         }
 
         body > header h1 {
@@ -44,7 +48,7 @@
         nav {
             background-color: var(--laranja);
             padding: 15px;
-            border-radius: 6px;
+            border-radius: 2px;
         }
 
         nav ul {
@@ -64,21 +68,36 @@
             flex-direction: column;
             gap: 15px;
         }
-
-        section {
+        div {
+            background-color: var(--cinza);
+            padding: 20px; 
+            border-radius: 8px;
+            width: 99vw;
+            height: 60vh;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        div > section {
             background-color: var(--amarelo);
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 4px;
+            height : 90%;
+            width : 100%;
+            box-sizing: border-box;
         }
 
         section h2 {
             margin: 0 0 15px 0;
         }
 
-        article {
+        section > article {
             background-color: var(--verde);
-            padding: 20px;
+            padding: 10px;
             border-radius: 6px;
+            height : 90%;
+            width : 100%;
+            overflow: hidden;
+            box-sizing: border-box;
         }
 
         article h3 {
@@ -89,11 +108,15 @@
             margin: 0;
         }
 
-        aside {
+        div > aside {
             background-color: var(--roxo);
             color: var(--texto-branco);
             padding: 20px;
-            border-radius: 8px;
+            margin: 5px;
+            border-radius: 8px
+            heigth : 20%;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         aside h4 {
@@ -108,13 +131,15 @@
             margin: 10px;
             border-radius: 8px;
             font-weight: bold;
+            height: 5vh;
+            width: 100vw;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Header do Site</h1>
+        <h1>Titulo do site (header)</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -124,21 +149,22 @@
     </header>
 
     <main>
-        <section>
-            <h2>Seção</h2>
-            <article>
-                <h3>Articulo</h3>
-                <p>Paragrafo</p>
-            </article>
-        </section>
-
-        <aside>
-            <h4>aside</h4>
-        </aside>
+        <div>
+            <section>
+                <h2>Nossa missão (Section) </h2>
+                <article>
+                    <h3>Historia da empresa (article)</h3>
+                    <p>Conteudo independente</p>
+                </article>
+            </section>
+            <aside>
+                <h4>Links relacionados (aside)</h4>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <p>Rodape Header 2</p>
+        <p>@2026 - Rodape semantico </p>
     </footer>
 </body>
 </html>
