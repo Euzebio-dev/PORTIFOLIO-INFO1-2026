@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --azul: #3c8be6;
+            --laranja: #e67e22;
+            --amarelo: #ebee26;
+            --verde: #35cf68;
+            --roxo: #9b59b6;
+            --cinza-escuro: #21273b;
+            --fundo-claro: #f2faff;
+            --texto-escuro: #332c50;
+            --texto-branco: #f2fbff;
+        }
+
+        body {
+            background-color: var(--fundo-claro);
+            color: var(--texto-escuro);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        body > header {
+            background-color: var(--azul);
+            color: var(--texto-branco);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        body > header h1 {
+            margin: 0 0 15px 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            background-color: var(--laranja);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        nav a {
+            color: #34495e;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        section {
+            background-color: var(--amarelo);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            margin: 0 0 15px 0;
+        }
+
+        article {
+            background-color: var(--verde);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        article h3 {
+            margin: 0 0 10px 0;
+        }
+
+        article p {
+            margin: 0;
+        }
+
+        aside {
+            background-color: var(--roxo);
+            color: var(--texto-branco);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside h4 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: var(--cinza-escuro);
+            color: var(--azul);
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Header do Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Seção</h2>
+            <article>
+                <h3>Articulo</h3>
+                <p>Paragrafo</p>
+            </article>
+        </section>
+
+        <aside>
+            <h4>aside</h4>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Rodape Header 2</p>
+    </footer>
+</body>
+</html>
