@@ -29,7 +29,7 @@ header > nav {
     box-sizing: border-box;
 }
 
-main {
+main > div {
     height: 65vh;
     width: 100vw;
     background-color: lightgray;
@@ -39,7 +39,7 @@ main {
 }
 
 div > section {
-    height: 80%;
+    height: 75%;
     width: 100%;
     background-color: yellow;
     border: 10px solid gray;
@@ -62,7 +62,7 @@ div > aside {
     background-color: purple;
     border: 5px dotted gray;
     padding: 20px;
-    margin: 20px;
+    margin-top: 15px;
     box-sizing: border-box;
 }
 
