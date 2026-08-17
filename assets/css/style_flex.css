@@ -7,8 +7,8 @@ body {
 }
 .retangulo {
     background-color: gray;
-    width: 800;
-    height: 400;
+    width: 800px;
+    height: 400px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,6 @@ body {
 
 .quadrado {
     background-color: red;
-    height: 200;
-    width: 200;
+    height: 200px;
+    width: 200px;
 }
