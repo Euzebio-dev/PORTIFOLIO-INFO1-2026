@@ -1,0 +1,21 @@
+body {
+    width: 100vw; 
+    height: 100vh; /* profisora isso aqui faz o body ser 100% da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.retangulo {
+    background-color: gray;
+    width: 800;
+    height: 400;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    background-color: red;
+    height: 200;
+    width: 200;
+}
